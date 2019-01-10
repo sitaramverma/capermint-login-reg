@@ -1,0 +1,21 @@
+{
+  "name": "capermint-login-reg",
+  "version": "1.0.0",
+  "description": "capermin user login registrartion",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "sitaram-verma",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "3.0.0",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.1",
+    "jsonwebtoken": "^8.0.1",
+    "mongodb": "^3.1.6",
+    "mongoose": "^5.2.15"
+  }
+}
