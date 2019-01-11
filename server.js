@@ -17,11 +17,16 @@ const mongoURI = 'mongodb://localhost:27017/db_capermint'
 
 mongoose
 .connect(mongoURI,{useNewUrlParser:true})
-.then(() => console.log("MongoDB COnnected"))
+.then(() => console.log("MongoDB Connected"))
 .catch(err => console.log(err))
+
+
 
 const Users = require('./routes/Users')
 app.use('/users',Users)
+
+const Products = require('./routes/Products')
+app.use('/products',Products)
 
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`)
